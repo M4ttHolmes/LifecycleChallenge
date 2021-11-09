@@ -42,9 +42,9 @@ class PokeFetch extends Component {
                 clearInterval(guessTimer)
             } 
         }, 1000)
-        return ()=> {
-            clearInterval(guessTimer);
-          };
+        // return ()=> {
+        //     clearInterval(guessTimer);
+        //   };
     };
 
     render() {
@@ -56,6 +56,7 @@ class PokeFetch extends Component {
                     <br />
                     <img 
                         className={'pokeImg'} 
+                        draggable="false"
                         style={this.state.timer === 0 ? {filter: "brightness(100%)"} : {filter: "brightness(0%)"}}  
                         src={this.state.pokeSprite} 
                         alt=""
