@@ -13,6 +13,11 @@ class PokeFetch extends Component {
          }
     }
 
+    componentDidMount = () => {
+        this.fetchPokemon();
+        this.countdown();
+    }
+
     fetchPokemon() {
         let min = Math.ceil(1);
         let max = Math.floor(152);
