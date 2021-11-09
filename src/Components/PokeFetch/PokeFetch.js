@@ -42,9 +42,6 @@ class PokeFetch extends Component {
                 clearInterval(guessTimer)
             } 
         }, 1000)
-        // return ()=> {
-        //     clearInterval(guessTimer);
-        //   };
     };
 
     render() {
